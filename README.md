@@ -6,4 +6,4 @@ A simple one page website with links to my personal:
   * Facebook
   * email
 
-You can visit the site [here] (egpaul.com)
+You can visit the site [here] (https://egpaul.com)
