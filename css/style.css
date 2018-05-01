@@ -1,39 +1,51 @@
-.body {
-  min-height: 100vh;
-  position: absolute;
-}
-
 .container-fluid {
-  min-height: 100vh;
   font-family: 'Raleway', sans-serif;
-
+  color: white;
+  background-color: #333333;
+  min-height: 100vh;
 }
 
 .row {
-  min-height: inherit;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+a {
+  font-family: 'Raleway', sans-serif;
+  color: white;
 }
 
 .left-side {
-  min-height: 100%;
-  text-align: center;
-  vertical-align: middle;
-  left: 0;
-  right: 0;
-  font-size: 65px;
+  max-width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  overflow: hidden;
 }
 
 .center {
   min-height: 100%;
-  text-align: center;
-  left: 0;
-  right: 0;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
   font-size: 198px;
+  overflow: hidden;
 }
 
+
 .right-side {
-  min-height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  overflow: hidden;
+}
+
+.rotate {
+  transform: rotate(270deg);
+  min-width: 40vw;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  left: 0;
-  right: 0;
-  font-size: 65px;
 }
