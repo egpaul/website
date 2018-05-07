@@ -1,51 +1,55 @@
-.container-fluid {
+body {
   font-family: 'Raleway', sans-serif;
   color: #ffffff;
   background-color: #333333;
-  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
-.row {
-  min-height: 100vh;
-  min-width: 100vw;
-}
+a { color: #fff; text-decoration: none;margin: 2vw; }
+a:hover { color: #00f; }
 
-a {
-  font-family: 'Raleway', sans-serif;
-  color: #ffffff;
-}
-
-.left-side {
-  max-width: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 35px;
-  overflow: hidden;
-}
-
-.center {
-  min-height: 100%;
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  font-size: 198px;
-  overflow: hidden;
-}
-
-
-.right-side {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 35px;
-  overflow: hidden;
-}
-
-.rotate {
+#left-side {
+  position: absolute;
+  top: 50vw;
+  width: 50vw;
+  height: 10vw;
+  padding: 5px;
+  text-align: left;
+  font-size: 2vw;
   transform: rotate(270deg);
-  min-width: 40vw;
-  justify-content: center;
-  align-items: center;
+  transform-origin: left top;
+}
+
+#center {
+  position: absolute;
+  margin-left: 25vw;
+  width: 50vw;
+  height: 15vw;
+  top: 50%;
+  margin-top: -7vw;
   text-align: center;
+  font-size: 12vw;
+}
+
+#right-side {
+  position: absolute;
+  bottom: 2vw;
+  margin-left: 99vw;
+  width: 50vw;
+  padding: 5px; 
+  text-align: left;
+  font-size: 2vw;
+  transform: rotate(270deg);
+  transform-origin: left bottom;
+}
+
+
+@media only screen and (max-device-width:800px){
+a { margin:1vw;padding: 0; }
+#center { font-size: 16vw;top: 30%;}
+#left-side, #right-side { position: absolute; transform: none;font-size: 5vw; }
+#left-side { top: 110vw;width: 95%; text-align: right;}
+#right-side { top: 0px; width: 95%; padding:0;margin:0; text-align: center; }
 }
